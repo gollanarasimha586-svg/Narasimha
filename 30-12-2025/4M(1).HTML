@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM + CSS Example</title>
+    <link rel="stylesheet" href="4M(1).CSS">
+    <script src="4M(1).script.js" defer></script>
+
+</head>
+<body>
+
+    <div id="container"></div>
+    <button id="addBtn">Add Card</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const button = document.getElementById("addBtn");
+            const container = document.getElementById("container");
+
+            button.addEventListener("click", function () {
+
+                const card = document.createElement("div");
+                card.classList.add("card");
+                card.textContent = "New Card Added";
+
+                container.appendChild(card);
+            });
+
+        });
+    </script>
+
+</body>
+</html>

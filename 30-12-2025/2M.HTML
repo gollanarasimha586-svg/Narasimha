@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Management Demo</title>
+  <link ref="style stylesheet" href="2M.CSS">
+      <script src="2M.script.js"defer></script>
+
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    button { margin: 5px; }
+    .item { padding: 6px; border: 1px solid #ccc; margin: 4px 0; }
+  </style>
+</head>
+<body>
+
+  <h2>DOM Management</h2>
+
+  
+  <input id="textInput" type="text" placeholder="Enter text" />
+  <button id="addBtn">Add Item</button>
+  <button id="updateFirstBtn">Update First</button>
+  <button id="removeLastBtn">Remove Last</button>
+
+  <ul id="list"></ul>
+
+  <script>
+    const input = document.getElementById("textInput");
+    const list = document.getElementById("list");
+    const addBtn = document.getElementById("addBtn");
+    const updateFirstBtn = document.getElementById("updateFirstBtn");
+    const removeLastBtn = document.getElementById("removeLastBtn");
+
+    
+    addBtn.addEventListener("click", () => {
+      if (!input.value.trim()) return;
+
+      const li = document.createElement("li");
+      li.className = "item";
+      li.textContent = input.value;
+
+      list.appendChild(li);
+      input.value = "";
+    });
+
+    updateFirstBtn.addEventListener("click", () => {
+      const first = list.firstElementChild;
+      if (first) {
+        first.textContent = "UPDATED: " + first.textContent;
+      }
+    });
+
+    removeLastBtn.addEventListener("click", () => {
+      const last = list.lastElementChild;
+      if (last) {
+        list.removeChild(last);
+      }
+    });
+
+    list.addEventListener("click", (e) => {
+      if (e.target.classList.contains("item")) {
+        e.target.remove();
+      }
+    });
+
+    function addPresetItem(text) {
+      list.insertAdjacentHTML(
+        "beforeend",
+        `<li class="item">${text}</li>`
+      );
+    }
+
+    function highlightAll() {
+      document.querySelectorAll(".item").forEach(el => {
+        el.style.background = "#ffeaa7";
+      });
+    }
+
+    function clearAll() {
+      list.innerHTML = "";
+    }
+
+    addPresetItem("Example A");
+    addPresetItem("Example B");
+    highlightAll();
+  </script>
+
+</body>
+</html>

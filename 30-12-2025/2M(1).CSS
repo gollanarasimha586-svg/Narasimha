@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    margin: 20px;
+    padding: 10 20px;
+    border: 2px solid rgb(29, 26, 26);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+    color: rgb(225, 10, 35);
+    background-color: rgb(14, 241, 18);
+}
+button:active{
+    scale: 0.5;
+}

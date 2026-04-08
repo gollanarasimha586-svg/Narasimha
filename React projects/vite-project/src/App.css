@@ -1,0 +1,46 @@
+/* Center everything */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+}
+
+
+.box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  align-items: center; 
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: palegreen;
+  color: white;
+}
+
+button:hover {
+  background-color: red;
+}

@@ -1,0 +1,58 @@
+body{
+    font-family: Arial;
+    background:#f0f0f0;
+}
+
+.container{
+    display:flex;
+    gap:40px;
+    justify-content:center;
+    margin-top:80px;
+}
+
+/* Form Box */
+
+.form-box{
+    background:white;
+    padding:25px;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-box input,
+.form-box select{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+}
+
+.form-box button{
+    width:100%;
+    padding:10px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+/* Profile Box */
+
+.profile-box{
+    background:white;
+    width:260px;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Circular Profile Picture */
+
+.profile-pic{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:10px;
+}

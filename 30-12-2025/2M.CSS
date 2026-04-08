@@ -1,0 +1,74 @@
+/* ===== Base layout ===== */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f5f6fa;
+}
+
+#list {
+  padding: 0;
+  margin-top: 15px;
+}
+
+/* ===== DOM state via class ===== */
+/* Example 1: element created → gets .item */
+.item {
+  list-style: none;
+  padding: 8px 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  transition: 0.2s;
+}
+
+/* Example 2: JS updates → adds .updated */
+.item.updated {
+  background: #dfe6e9;
+  font-weight: bold;
+}
+
+/* ===== DOM state via attribute ===== */
+/* Example 1: data-selected="true" */
+.item[data-selected="true"] {
+  border-color: #0984e3;
+  background: #e3f2fd;
+}
+
+/* Example 2: hidden attribute */
+.item[hidden] {
+  display: none;
+}
+
+/* ===== User interaction (pseudo-classes) ===== */
+/* Example 1: hover */
+.item:hover {
+  background: #ffeaa7;
+  cursor: pointer;
+}
+
+/* Example 2: active click */
+.item:active {
+  transform: scale(0.98);
+}
+
+/* ===== Structural DOM relationships ===== */
+/* Example 1: first element in DOM */
+#list .item:first-child {
+  border-left: 4px solid #00b894;
+}
+
+/* Example 2: last element in DOM */
+#list .item:last-child {
+  border-left: 4px solid #d63031;
+}
+
+/* ===== Parent reacting to DOM children (modern CSS) ===== */
+#list:has(.item) {
+  border-top: 2px solid #636e72;
+}
+
+#list:empty::before {
+  content: "No items in DOM";
+  color: #999;
+  font-style: italic;
+}

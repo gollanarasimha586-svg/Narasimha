@@ -1,0 +1,56 @@
+<body>
+
+ <header class="hero">
+  <div class="nav">
+    <div class="logo">logo</div>
+    <div class="menu">☰</div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Web Software Developers</h1>
+      <p>Ut enim ad minim veniam...</p>
+      <span class="credit">Image from Freepik</span>
+      <a class="btn">READ MORE</a>
+    </div>
+    <div class="hero-image"></div>
+  </div>
+</header>
+
+<section class="features">
+  <h2>Key Features</h2>
+  <p class="subtitle">Sample text...</p>
+
+  <div class="features-grid">
+    <div class="features-image"></div>
+    <div class="feature-cards">
+      <div class="card dev">Development</div>
+      <div class="card skills">Top Skills</div>
+      <div class="card design">Design</div>
+      <div class="card responsive">Responsive</div>
+    </div>
+  </div>
+</section>
+
+<section class="data">
+  <div class="data-grid">
+    <div class="data-image"></div>
+    <div class="data-text">
+      <h2>Data Visualization</h2>
+
+      <div class="item">
+        <h4>01. GOALS</h4>
+        <p>Sample text...</p>
+        <a>MORE</a>
+      </div>
+
+      <div class="item">
+        <h4>02. STRATEGY</h4>
+        <p>Sample text...</p>
+        <a>MORE</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>

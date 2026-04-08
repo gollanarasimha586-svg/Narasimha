@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>User Profile Card</title>
+<link rel="stylesheet" href="RU.CSS">
+<script src="RU.JS"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="form-box">
+        <h2>User Form</h2>
+
+        <input type="text" id="name" placeholder="Full Name">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="tel" id="phone" placeholder="Phone Number">
+
+        <select id="gender">
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <button onclick="generateProfile()">Submit</button>
+    </div>
+
+    <div class="profile-box">
+
+        <img src="https://via.placeholder.com/120" class="profile-pic">
+
+        <h3 id="displayName">Full Name</h3>
+        <p id="displayEmail">Email</p>
+        <p id="displayPhone">Phone</p>
+        <p id="displayGender">Gender</p>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

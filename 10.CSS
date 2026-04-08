@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient red;
+    gap: 2em;
+
+}
+.loader-1,.loader-2{
+    width: 300px;
+    background: snow;
+    padding:15px 25px;
+    border: 8px;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25em;
+
+}
+.loader-1 .circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid gray;
+        border-top: 5px solid blue;
+        animation: rotate infinite 0.8s;
+
+}
+@keyframes rotate{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+.loader-1 p{
+    font-weight: 520;
+
+}
+.loader-2 .box{
+    width: 100px;
+    height: 50px;
+    animation: loader-2 infinite 2s;
+    margin: 24px 0;
+}
+@keyframes loader-2{
+    0%,100%{
+        rotate:-45deg;
+        border:2px solid blue;
+        box-shadow:inset -100px 0 blueviolet;
+    }
+    50%{
+        rotate:45deg;
+        border:2px solid red;
+        box-shadow:inset 100px 0 red;
+    }
+}
+.loader-3{
+    width: 500px;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 0 10px rgb(17, 17, 16);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+}
+.loader-3 .box{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+}
+span{
+    width: 15px;
+    height: 7px;
+    background-color: gray;
+    animation: loader-3 infinite 0.25s;
+}
+span:nth-child(2){
+    animation-delay: 0.3s;
+}
+span:nth-child(3){
+    animation-delay: 0.6s;
+}
+span:nth-child(4){
+    animation-delay: 0.9s;
+}
+span:nth-child(5){
+    animation-delay: 1s;
+}
+@keyframes loader-3{
+    0%{
+        background: blue;
+    }
+    100%{
+        background-color:red;
+    }
+}
+
+
+
+

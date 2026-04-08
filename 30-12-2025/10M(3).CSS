@@ -1,0 +1,56 @@
+body{
+margin:0;
+font-family:Arial;
+background-color: yellow;
+}
+
+/* Main container */
+.container{
+display:flex;
+border:3px solid black;
+padding:20px;
+}
+
+/* Main project area */
+.main{
+flex:1;
+}
+
+/* Cards row */
+.cards{
+display:flex;
+gap:40px;
+margin-top:40px;
+}
+
+/* Card design */
+.card{
+border:2px solid black;
+width:180px;
+padding:10px;
+}
+
+/* Image box */
+.image-box{
+border:2px solid black;
+height:90px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:10px;
+}
+
+/* Add tag section */
+.add-tag{
+width:120px;
+display:flex;
+align-items:flex-start;
+justify-content:center;
+writing-mode:vertical-rl;
+text-orientation:mixed;
+}
+
+.add-tag button{
+padding:10px;
+cursor:pointer;
+}
